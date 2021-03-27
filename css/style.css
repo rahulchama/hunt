@@ -1,0 +1,541 @@
+/* common css goes here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Raleway', sans-serif;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* navbar css goes here */
+.nav-item a{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all .3s linear;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-left: 30px;
+}
+.navbar{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #7a6034;
+}
+
+
+/* banner css goes here */
+#banner-main{
+    background: url(../images/banner-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#banner-main::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.all-content{
+    position: relative;
+    z-index: 99;
+}
+.banner-content{
+    height: 100vh;
+}
+.banner-text h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.banner-text h1{
+    color: #fec600;
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: -9px;
+}
+.banner-text p{
+    color: #f1f1f1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+.tag{
+    display: flex;
+    justify-content: center;
+}
+.tag1 a {
+	padding: 20px;
+	border: 1px solid #fff;
+	color: #000;
+    background: #fec600;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	transition: all .3s linear;
+	margin: 0 5px;
+}
+/* .tag1 a:hover{
+    background: #fec600;
+    color: #222222;
+} */
+.tag2 a {
+	padding: 20px 30px;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	transition: all .3s linear;
+	margin: 0 5px;
+}
+.tag2 a:hover{
+    background: #fec600;
+    color: #222222;
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+.nav-item a:hover{
+    color: #fec600;
+}
+
+
+/* our portfoio css goes here */
+#portfolio{
+    background: url(../images/portfolio-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+}
+.porfolio-text h2{
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    padding-bottom: 8px;
+}
+.porfolio-text p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    line-height: 24px;
+}
+.portfoio-img{
+    position: relative;
+}
+.porfolio-overlay{
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all .3s linear;
+}
+.porfolio-overlay i{
+    color: #fff;
+    transition: all .3s linear;
+}
+.portfoio-img:hover .porfolio-overlay{
+    opacity: 1;
+}
+
+
+
+/* service area goes here */
+#service{
+    margin-bottom: 200px;
+}
+.service-text{
+    padding-bottom: 200px;
+}
+.service-main{
+    position: relative;
+}
+.service-icon i{
+    color: #000000;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    transition: all .3s linear;
+}
+.service-icon .top{
+    position: absolute;
+    top: -110px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+.service-icon .bottom {
+	position: absolute;
+	bottom: -110px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 99;
+}
+/* .pudi{
+    margin-top: 100px;
+} */
+/* .krishna{
+    margin-bottom: 100px;
+} */
+
+.service-text h2{
+    font-size: 35px;
+    font-weight: 400;
+    color: #111111;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    padding-top: 45px;
+}
+.service-text p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #353535;
+    line-height: 24px;
+}
+.service-item1-h5 h5{
+    color: #111111;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.service-item1-img img{
+    width: 58px;
+    height: 58px;
+    margin: 0 auto;
+    align-self: center;
+}
+.service-item1-img{
+    text-align: center;
+    background: #ddd;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+    display: flex;
+}
+.two{
+    justify-content: center;
+}
+.service-item1-p p {
+	color: #353535;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0 -2px;
+}
+.service-item1-p{
+    background: #ddd;
+    padding: 40px 30px;
+    position: relative;
+}
+.service-item1-p::after{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: #ddd;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%)rotate(45deg);
+}
+.position{
+    position: relative;
+}
+.position::after {
+	position: absolute;
+	content: '';
+	width: 30px;
+	height: 30px;
+	background: #ddd;
+	top: 50%;
+	left: 459px;
+	transform: translateY(-50%)rotate(45deg);
+}
+.position1{
+    position: relative;
+}
+.position1::after {
+	position: absolute;
+	content: '';
+	width: 30px;
+	height: 30px;
+	background: #ddd;
+	top: 50%;
+	left: 459px;
+	transform: translateY(-50%)rotate(45deg);
+}
+
+/* testimonial area css goes here */
+#testimonial{
+    background: url(../images/testimonial-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 70px 0;
+}
+#testimonial::after{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fafafa{
+    z-index: 999;
+    position: relative;
+}
+.radious-testimonial.haha {
+	padding: 130px 0;
+}
+.radious-testimonial{
+    position: relative;
+}
+.radious-testimonial img{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 50%;
+}
+.hahaha{
+    display: flex;
+}
+.testimonial-texts{
+    align-self: center;
+}
+.testimonial-text1{
+    background: #f1f1f1;
+    padding: 60px 32px;
+}
+.testimonial-text1 h5{
+    font-size: 20px;
+    font-weight: 500;
+    color: #222222;
+    text-transform: capitalize;
+}
+.testimonial-text1 i{
+    color: #fec600;
+    font-size: 16px;
+}
+.testimonial-text1 span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #353535;
+}
+.testimonial-text1 p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #353535;
+    line-height: 24px;
+}
+.signature {
+	display: flex;
+	justify-content: flex-end;
+}
+.testimonial-icons{
+    position: relative;
+}
+.chevron-icons .left{
+    position: absolute;
+    top: 0;
+    left: 17%;
+    z-index: 99999;
+}
+.chevron-icons .right{
+    position: absolute;
+    bottom: 0;
+    z-index: 99999;
+    left: 17%;
+    margin-bottom: 0px;
+}
+.chevron-icons i{
+    width: 60px;
+    height: 60px;
+    background: purple;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+}
+.huhuhu {
+	padding-top: 130px;
+}
+.hihihi {
+	padding-bottom: 130px;
+}
+
+/* pricing plan css goes here */
+.pricing-title h2{
+    font-size: 35px;
+    font-weight: 400;
+    color: #111111;
+    text-transform: capitalize;
+    padding-bottom: 12px;
+    padding-top: 44px;
+}
+.pricing-title p {
+	font-size: 14px;
+	font-weight: 400;
+	color: #353535;
+	line-height: 24px;
+	padding: 0 143px;
+    margin-bottom: 44px;
+}
+
+.pricing-one{
+    background: #353535;
+    text-align: center;
+    transition: all .3s linear;
+}
+.silver h5{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.silver-txt{
+    background-color: #f1f1f1;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    position: relative;
+}
+.silver-txt span {
+	color: #353535;
+	padding: 0 101px;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.join {
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+.join span{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 26px;
+}
+.pricing-one{
+    position: relative;
+}
+.silver-money-main {
+	background: #fff;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	border: 1px solid #444444;
+	position: absolute;
+	left: 50%;
+	top: 69px;
+	z-index: 999;
+	transform: translateX(-50%);
+}
+.silver-money1{
+    width: 90px;
+    height: 90px;
+    background: #353535;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    transition: all .3s linear;
+}
+.silver-money{
+    margin: 0 auto;
+    align-self: center;
+}
+.silver-money h5{
+    color: #fff;
+    font-size: 29px;
+    font-weight: 400;
+    margin-bottom: -5px;
+}
+.silver-money span{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.pricing-pln:hover .pricing-one{
+    background: #fec600;
+}
+.pricing-pln:hover .silver-money1{
+    background: #fec600;
+}
+.pricing-pln:hover .silver-money-main{
+    border: #fec600;
+}
+
+
+/* counter area css goes here */
+#counter{
+    background: url(../images/portfolio-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#counter::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.all-counter{
+    display: flex;
+}
+.counter1 h5{
+    
+}
